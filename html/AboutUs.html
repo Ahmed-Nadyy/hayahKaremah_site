@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../img2/jpg.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayah Karema</title>
+    <link rel="stylesheet" href="../css/portCss.css">
+    <link rel="stylesheet" href="../css/AboutUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'><link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+            /* video {
+                width: 80%;
+                max-width: 600px;
+                height: auto;
+                
+            } */
+    </style>
+</head>
+<body>
+    <section>
+     <!-- first-page home landing-page -->
+    <header class="header">
+      <a href="#" class="logo">حياة كريمة</a>
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <nav class="navbar">
+          <a href="../index.html" target="_self" >الرئيسية</a>
+          <a href="./AboutUs.html" target="_self">من نحن</a>
+          <a href="./projects.html" target="_blank">أعمالنا</a>
+      </nav>
+  </header> 
+ 
+    <div class="content_two">
+    
+        <!-- services section -->
+   <section class="servicess" id="servicess">
+    <!-- <h2 class="heading">Learn</h2> -->
+    <div class="services-container">
+        <div class="services-box_one" id="nur">
+            <h3>مواقع التواصل الاجتماعي</h3>
+            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" target="_blank" class="btn" style="color: #8ccf63;">فيسبوك</a>
+        </div>
+        <div class="services-box_two">
+            <h3>فروعنا</h3>
+            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" class="btn" style="color: #8ccf63;">فرع نقادة</a>
+            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" class="btn" style="color: #8ccf63;">فرع قوص</a>
+            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" class="btn" style="color: #8ccf63;">فرع دشنا</a>
+            <!-- <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" class="btn" style="color: #8ccf63;">فرع القصير</a> -->
+            
+        </div>
+        <div class="services-box_three" dir="rtl">
+          <h3>من نحن</h3>
+          <p>انها تلك المبادرة الوطنيه التي اطلقها السيد الرئيس عبد الفتاح السيسي رئيس جمهورية مصر العربية,2 يناير من العام الميلادي وهي مبادرة متعددة في أركانها ومتكاملة في ملامحها ز تنبع هذه المبادرة من مسئولية حضارية وبعد إنساية قبل اي  شيئ اّخر , فهي ابعد من كونها  مبادرة تهدف الي تحسين ظروف المعيشة والحياة اليومية للمواطن المصري, الأنها تهدف ايضا الى التدخل الأني و العاجل لتكريم الإنسان المصري و حفظ كرامته وحقه في العيش الكريم ,ذلك المواطن الذي تحمل فاتورة الإصلاح الإقتصادي والذي كان خير مساند للدولة في معركتها نحو البناء والتنمية. لقد كان المواطن المصري هو البطل الحقيقي الذي تحمل كافة الظروف والمراحل الصعبة بكل تجرد وإخلاص وحب للوطن.
+          </p>
+      </div>
+      <div class="vid">
+        <video controls>
+            <source src="../videos/مبادرة حياة كريمة - YouTube.mkv" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+      </div>
+    </div>
+</section>
+
+    </div>
+    
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul> 
+
+  <!-- partial -->
+</section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+<script  src="../js/script.js"></script>
+<script>
+      var i=0,text;
+text="انها تلك المبارة الوطنية التي اطلقها سيادة الرئيس عبدالفتاح السيسي، رئيس جمهورية مصر العربية، 2 يناير من العام الميلادي وهي مبادرة متعددة في اركانها ومتكاملة في ملامحها";
+setInterval(function(){
+    if(i<text.length){
+        document.querySelector(".aa").innerHTML +=text.charAt(i);
+        i++;
+        if(i==text.length){
+            document.querySelector(".aa").style.color="#237a75"
+            
+        }       
+    }
+},10)
+</script>
+</body>
+</html>
