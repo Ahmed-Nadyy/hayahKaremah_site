@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="../img2/jpg.jpg">
     <meta charset="UTF-8">
@@ -9,95 +10,289 @@
     <link rel="stylesheet" href="../css/AboutUs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'><link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <style>
-            /* video {
+        /* video {
                 width: 80%;
                 max-width: 600px;
                 height: auto;
                 
             } */
+        .all_one {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .services-container {
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            gap: 8rem;
+            flex-wrap: wrap;
+        }
+
+        .services-container .services-box_one {
+            color: #237a75;
+            width: 300px;
+            height: 450px;
+            flex: 1 1 10rem;
+            padding: 1.5rem 1.5rem 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            /* background-color:var(--bg-clr); */
+            border: .2rem solid #0000004a;
+            box-shadow: 0 0 3rem #ffffff4a;
+            /* margin: 2.5rem 1rem 2.5rem ; */
+            transition: .5 ease;
+            margin: 0 0 0 160px;
+            /* width: 400px; */
+
+        }
+
+        .services-container .services-box_two {
+            width: 300px;
+            height: 450px;
+            flex: 1 1 10rem;
+            padding: 1.5rem 1.5rem 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            /* background-color:var(--bg-clr); */
+            border: .2rem solid #0000004a;
+            box-shadow: 0 0 3rem #ffffff4a;
+            /* margin: 2.5rem 1rem 2.5rem ; */
+            transition: .5 ease;
+            margin: 0 0 0 0;
+            /* width: 400px; */
+
+        }
+
+        .services-container .services-box_three {
+            width: 300px;
+            height: 450px;
+            flex: 1 1 10rem;
+            padding: 1.5rem 1.5rem 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            /* background-color:var(--bg-clr); */
+            border: .2rem solid #0000004a;
+            box-shadow: 0 0 3rem #ffffff4a;
+            /* margin: 2.5rem 1rem 2.5rem ; */
+            transition: .5 ease;
+            margin: 0 160px 0 0;
+            /* width: 400px; */
+
+        }
+
+
+        .services-container .services-box_one:hover,
+        .services-box_two:hover,
+        .services-box_three:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 3rem #8ccf634a;
+        }
+
+        .services-box_one i,
+        .services-box_two i,
+        .services-box_three i {
+            font-size: 3.5rem;
+            color: #8ccf63;
+            padding-bottom: .3rem;
+        }
+
+        .services-box_one h3,
+        .services-box_two h3,
+        .services-box_three h3 {
+            font-size: 3rem;
+            color: #e27125;
+            font-weight: 900;
+            padding-bottom: 1rem;
+        }
+
+        .services-box_one p,
+        .services-box_two p,
+        .services-box_three p {
+            color: #237a75;
+            font-size: 1.6rem;
+            text-align: justify;
+            /* font-weight: 900; */
+            padding-bottom: 2rem;
+            font-weight: 900;
+        }
+
+        .services-box_one h1,
+        .services-box_two h1,
+        .services-box_three h1 {
+            font-size: 2.5rem;
+            color: #237a75;
+            /* font-weight: 900; */
+            /* padding-bottom: 2rem; */
+        }
+
+        .heading {
+            font-size: 40px;
+            font-weight: 900;
+            color: #8ccf63;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 500px) {
+            .services-container {
+                margin: 40px;
+                display: flex;
+                /* flex-wrap: wrap; */
+                /* width: 500px; */
+                gap: 8rem;
+                overflow: auto;
+
+            }
+
+            .services-container .services-box_one {
+                color: #237a75;
+                width: 300px;
+                height: 450px;
+                padding: 1.5rem 1.5rem 1.5rem;
+                border-radius: 1rem;
+                text-align: center;
+                border: .2rem solid #0000004a;
+                box-shadow: 0 0 3rem #ffffff4a;
+                transition: .5 ease;
+                margin: 0 0 0 0;
+
+            }
+
+            .services-container .services-box_two {
+                width: 300px;
+                height: 450px;
+                padding: 1.5rem 1.5rem 1.5rem;
+                border-radius: 1rem;
+                text-align: center;
+                border: .2rem solid #0000004a;
+                box-shadow: 0 0 3rem #ffffff4a;
+                transition: .5 ease;
+                margin: 0 0 0 0;
+
+
+            }
+
+            .services-container .services-box_three {
+                width: 300px;
+                height: 450px;
+                padding: 1.5rem 1.5rem 1.5rem;
+                border-radius: 1rem;
+                text-align: center;
+                border: .2rem solid #0000004a;
+                box-shadow: 0 0 3rem #ffffff4a;
+                transition: .5 ease;
+                margin: 0 160px 0 0;
+
+            }
+            .all_one {
+            display: flex;
+            flex-direction: column;
+        }
+        }
     </style>
 </head>
+
 <body>
     <section>
-     <!-- first-page home landing-page -->
-    <header class="header">
-      <a href="#" class="logo">حياة كريمة</a>
-      <i class='bx bx-menu' id="menu-icon"></i>
-      <nav class="navbar">
-          <a href="../index.html" target="_self" >الرئيسية</a>
-          <a href="./AboutUs.html" target="_self">من نحن</a>
-          <a href="./projects.html" target="_blank">أعمالنا</a>
-      </nav>
-  </header> 
- 
-    <div class="content_two">
-    
-        <!-- services section -->
-   <section class="servicess" id="servicess">
-    <!-- <h2 class="heading">Learn</h2> -->
-    <div class="services-container">
-        <div class="services-box_one" id="nur">
-            <h3>مواقع التواصل الاجتماعي</h3>
-            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" target="_blank" class="btn" style="color: #8ccf63;">فيسبوك</a>
-        </div>
-        <div class="services-box_two">
-            <h3>فروعنا</h3>
-            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" class="btn" style="color: #8ccf63;">فرع نقادة</a>
-            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" class="btn" style="color: #8ccf63;">فرع قوص</a>
-            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" class="btn" style="color: #8ccf63;">فرع دشنا</a>
-            <!-- <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" class="btn" style="color: #8ccf63;">فرع القصير</a> -->
-            
-        </div>
-        <div class="services-box_three" dir="rtl">
-          <h3>من نحن</h3>
-          <p>انها تلك المبادرة الوطنيه التي اطلقها السيد الرئيس عبد الفتاح السيسي رئيس جمهورية مصر العربية,2 يناير من العام الميلادي وهي مبادرة متعددة في أركانها ومتكاملة في ملامحها ز تنبع هذه المبادرة من مسئولية حضارية وبعد إنساية قبل اي  شيئ اّخر , فهي ابعد من كونها  مبادرة تهدف الي تحسين ظروف المعيشة والحياة اليومية للمواطن المصري, الأنها تهدف ايضا الى التدخل الأني و العاجل لتكريم الإنسان المصري و حفظ كرامته وحقه في العيش الكريم ,ذلك المواطن الذي تحمل فاتورة الإصلاح الإقتصادي والذي كان خير مساند للدولة في معركتها نحو البناء والتنمية. لقد كان المواطن المصري هو البطل الحقيقي الذي تحمل كافة الظروف والمراحل الصعبة بكل تجرد وإخلاص وحب للوطن.
-          </p>
-      </div>
-      <div class="vid">
-        <video controls>
-            <source src="../videos/مبادرة حياة كريمة - YouTube.mkv" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    
-      </div>
-    </div>
-</section>
+        <!-- first-page home landing-page -->
+        <header class="header">
+            <a href="#" class="logo">حياة كريمة</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="../index.html" target="_self">الرئيسية</a>
+                <a href="./AboutUs.html" target="_self">من نحن</a>
+                <a href="./projects.html" target="_blank">أعمالنا</a>
+            </nav>
+        </header>
 
-    </div>
-    
-    <ul class="circles">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul> 
+        <div class="content_two">
 
-  <!-- partial -->
-</section>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
-<script  src="../js/script.js"></script>
-<script>
-      var i=0,text;
-text="انها تلك المبارة الوطنية التي اطلقها سيادة الرئيس عبدالفتاح السيسي، رئيس جمهورية مصر العربية، 2 يناير من العام الميلادي وهي مبادرة متعددة في اركانها ومتكاملة في ملامحها";
-setInterval(function(){
-    if(i<text.length){
-        document.querySelector(".aa").innerHTML +=text.charAt(i);
-        i++;
-        if(i==text.length){
-            document.querySelector(".aa").style.color="#237a75"
-            
-        }       
-    }
-},10)
-</script>
+            <!-- services section -->
+            <section class="servicess" id="servicess">
+                <!-- <h2 class="heading">Learn</h2> -->
+                <div class="services-container">
+                    <div class="all_one">
+                        <div class="services-box_one" id="nur">
+                            <h3>مواقع التواصل الاجتماعي</h3>
+                            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL"
+                                target="_blank" class="btn" style="color: #8ccf63;">فيسبوك</a>
+                        </div>
+                        <div class="services-box_two">
+                            <h3>فروعنا</h3>
+                            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL"
+                                class="btn" style="color: #8ccf63;">فرع نقادة</a>
+                            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL"
+                                class="btn" style="color: #8ccf63;">فرع قوص</a>
+                            <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL"
+                                class="btn" style="color: #8ccf63;">فرع دشنا</a>
+                            <!-- <a href="https://www.facebook.com/profile.php?id=100063948729691&mibextid=ZbWKwL" class="btn" style="color: #8ccf63;">فرع القصير</a> -->
+
+                        </div>
+                        <div class="services-box_three" dir="rtl">
+                            <h3>من نحن</h3>
+                            <p>انها تلك المبادرة الوطنيه التي اطلقها السيد الرئيس عبد الفتاح السيسي رئيس جمهورية مصر
+                                العربية,2 يناير من العام الميلادي وهي مبادرة متعددة في أركانها ومتكاملة في ملامحها ز
+                                تنبع هذه المبادرة من مسئولية حضارية وبعد إنساية قبل اي شيئ اّخر , فهي ابعد من كونها
+                                مبادرة تهدف الي تحسين ظروف المعيشة والحياة اليومية للمواطن المصري, الأنها تهدف ايضا الى
+                                التدخل الأني و العاجل لتكريم الإنسان المصري و حفظ كرامته وحقه في العيش الكريم ,ذلك
+                                المواطن الذي تحمل فاتورة الإصلاح الإقتصادي والذي كان خير مساند للدولة في معركتها نحو
+                                البناء والتنمية. لقد كان المواطن المصري هو البطل الحقيقي الذي تحمل كافة الظروف والمراحل
+                                الصعبة بكل تجرد وإخلاص وحب للوطن.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="vid">
+                        <video controls>
+                            <source src="../videos/مبادرة حياة كريمة - YouTube.mkv" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <!-- partial -->
+    </section>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+    <script src="../js/script.js"></script>
+    <script>
+        var i = 0, text;
+        text = "انها تلك المبارة الوطنية التي اطلقها سيادة الرئيس عبدالفتاح السيسي، رئيس جمهورية مصر العربية، 2 يناير من العام الميلادي وهي مبادرة متعددة في اركانها ومتكاملة في ملامحها";
+        setInterval(function () {
+            if (i < text.length) {
+                document.querySelector(".aa").innerHTML += text.charAt(i);
+                i++;
+                if (i == text.length) {
+                    document.querySelector(".aa").style.color = "#237a75"
+
+                }
+            }
+        }, 10)
+    </script>
 </body>
+
 </html>
