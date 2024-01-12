@@ -44,7 +44,7 @@ header{
     font-weight: 900;  
 }
 .logo{
-font-size: 1.5rem;
+font-size: 1rem;
 color: var(--text-clr);
 font-weight:900;
 cursor: default;
@@ -52,7 +52,7 @@ cursor: default;
 }
 .navbar a{
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-left: 2.5rem;
     transition: .3s;
     
